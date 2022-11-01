@@ -1,0 +1,552 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    font-family: 'Noto Sans TC', sans-serif;;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing: border-box;
+}
+
+/* body */
+
+body{
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 70px;
+}
+
+
+h2{
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: center;
+    margin: 100px 0 48px 0;
+}
+
+h3{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    padding: 12px;
+}
+
+
+p{
+    font-size: 16px;
+    line-height: 24px;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1088px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+
+
+/* upper */
+
+
+.upper{
+    position: relative;
+    background-color: #F7F9FD;
+    border-radius: 0 0 0 300px;
+    z-index: -2;
+}
+
+
+
+.pic{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 65vw;
+    z-index: -1;
+}
+
+
+/* header */
+
+
+header{
+    /* background: #F7F9FD; */
+    padding: 32px 139px;
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img{
+    display: block;
+    height: 40px;
+}
+
+
+.planfee-btn a{
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    padding: 8px;
+    font-weight: 400;
+}
+
+.planfeebtn-bl{
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+    background-color: #56C4C5;
+    width: 136px;
+    height: 49px;
+    font-size: 18px;
+    border-radius: 27px;
+    text-align: center;
+    margin: 16px;
+}
+ 
+.planfeebtn-red{
+    background-color: #FF5D50;
+    width: 128px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 22px;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    color: #ffffff;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+/* banner */
+.banner{
+    padding: 100px 139px 200px 139px;
+    max-width: 1088px;
+    margin: 0 auto;
+}
+
+
+@media screen and (max-width: 1136px){
+    header{
+        padding-bottom: 24px;
+        border-bottom: 2px solid #FFD153;
+    }
+    .pic{
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 715px){
+    .upper{
+        border-radius: 0 0 0 100px;
+    }
+    
+    .logo img{
+        height: 32px;
+
+    }
+    header{
+        margin-top: 12px;
+        padding: 16px 32px;
+    }
+    .logo img{
+        display: block;
+        height: 28px;
+    }
+    .pic{
+        width: 0vw;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+        padding: 48px 20px 200px 20px;
+        background-image: url(img_page_fee/Mask\ Group\ 2.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right bottom;
+        height: 560px;
+    }
+
+    h1{
+        font-size: 32px;
+        line-height: 46px;
+    }
+    .banner p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+/* 第二部分 */
+/* 彈性選擇，提供您選擇最適合的方案 */
+
+.numberlist{
+    display: flex;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+.numberlist li{
+    font-family: 'Comfortaa', cursive;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 12px 32px;
+    background: #56C4C5 0% 0% no-repeat padding-box;
+    border: 1px solid #56C4C5;
+    border-radius: 27px;
+}
+
+.numberlist span{
+    font-size: 18px;
+    line-height: 26px;
+}
+
+
+.numberlist .none_choose{
+    background: #FFFFFF;
+    color: #56C4C5;
+}
+
+@media screen and (max-width: 1136px){
+    .numberlist{
+        overflow-x: auto;
+        height: auto;
+        width: 64vw;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 715px){
+    .numberlist{
+        overflow-x: auto;
+        height: auto;
+        width: 80vw;
+        white-space: nowrap;
+        gap: 6px;
+    }
+    .numberlist li{
+        padding: 8px 12px;
+    }
+    h2{
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+/* 版本框框 */
+
+.ver{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0;
+}
+
+
+.ver_item{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 20px;
+    width: 48vw; 
+}
+
+.ver_item hr{
+    border: 1px solid #DDDDDD;
+    width: 95%;
+    margin: 8px 0 32px;
+}
+
+.ver_item p{
+    padding: 0 32px;
+    text-align: center;
+}
+
+.ver_description{
+    width: 90%;
+}
+
+.subscriptionfee{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px;
+    margin: 16px 0px;
+    width: 95%;
+}
+
+.sub_item{
+    background: #F5F5F5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    padding: 16px 0;
+}
+
+.sub_item span{
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.sub_item .p12{
+    font-size: 12px;
+    line-height: 17px;
+    padding: 0 0 8px 0;
+}
+
+.nb32{
+    font-size: 32px;
+    line-height: 35px;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+}
+
+.p29{
+    font-size: 29px;
+}
+
+.blw{
+    color: #56C4C5;
+}
+
+.detail{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.detail_item{
+    display: flex;
+    align-items: center;
+    margin: 4px;
+}
+
+.detail_item p{
+    padding: 0 12px;
+}
+
+@media screen and (max-width: 1136px){
+    .ver{
+        flex-direction: column;
+    }
+    .ver_item{
+        width: 80vw; 
+    }
+    
+
+}
+
+@media screen and (max-width: 715px){
+    .container{
+        padding: 0;
+    }
+    .ver_item{
+        width: 89vw; 
+    }
+    .ver_item p{
+        padding: 0;
+    }
+    .sub_item{
+        padding: 12px 16px;
+        margin: 0 6px;
+    }
+    .nb32{
+        font-size: 24px;
+    }
+    .detail_item p{
+        font-size: 12px;
+        margin-left: 8px;
+    }
+    .p29{
+        font-size: 24px;
+    }
+    h2{
+        padding: 0 24px;
+    }
+}
+
+/* 第三部分 */
+
+.qna{
+    margin: 0 auto;
+    margin-bottom: 48px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+::-webkit-details-marker{
+    display: none;
+}
+
+details {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 10px #00000014;
+    border-radius: 12px;
+    margin: 8px 0;    
+}
+  
+details summary {
+    font-size: 18px;
+    padding: 16px 32px;
+    list-style: none;
+    position: relative;
+}
+  
+
+summary::before,summary::after{
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #56C4C5;
+    top: 50%;
+    right: 6%;
+    content: '';
+    text-align: right;
+    transform: translateY(-50%);
+    transition: transform .2s ease-in-out;
+}
+
+details p {
+    color: #747474;
+    text-align: left;
+    line-height: 32px;
+    font-size: 16px;
+    padding: 8px 32px 32px 32px;
+
+}
+  
+details[open] > summary {
+    color: #56C4C5;
+    font-weight: 700;
+}
+
+details[open] summary::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+summary::after{
+    transform: translateY(-50%) rotate(90deg);
+
+}
+
+@media screen and (max-width: 1136px){
+    details {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 715px){
+    details {
+        width: 89vw;
+    }
+    details summary {
+        font-size: 16px;
+    }
+    summary::before,summary::after{
+        width: 16px;
+        height: 2px;
+        top: 50%;
+    }
+
+}
+
+
+
+/* copyright */
+.copyright{
+    display: block;
+    background-color: #e2e2e2;
+    text-align: center;
+    padding: 16px 0 16px 0;
+}
+
+/* top按鈕 */
+.btn-top{
+    display: block;
+    /* top: 674px;
+    left: 1247px; */
+    width: 71px;
+    height: 71px;
+    background: transparent url('img/top.png')  no-repeat;
+    position: fixed;
+    right: 5%;
+    bottom: 5%;
+}
