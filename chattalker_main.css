@@ -312,10 +312,10 @@ h2{
 .role_info{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
     height: 388px;
-    margin: 0 0 100px 0;
+    margin: 0 -4px 100px -4px;
 }
 
 .role_item{
@@ -543,6 +543,43 @@ h2{
    
         }
 }
+
+
+
+/* 點點清單 */
+/* .dotlist {
+    position: relative;  
+    width: 100%;
+    margin: 50px;
+  }
+  
+  .pagination {
+      position: absolute;
+      left: 0;
+      
+      &:nth-child(2) { left: 30px; }
+      &:nth-child(3) { left: 60px; }
+      &:nth-child(4) { left: 90px; }
+  }
+  
+  .circle {
+    position: absolute;
+    left: 0;
+    width: 20px;
+    height: 20px;  
+    border: 2px solid #777;
+    border-radius: 25px;
+  }
+  
+  .active {
+    width: 80px;
+    background: #777;
+} */
+
+
+
+
+
 
 
 footer{
