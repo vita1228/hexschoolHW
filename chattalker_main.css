@@ -117,12 +117,12 @@ header{
 
 @media screen and (max-width: 715px){
     .logo img{
-        height: 32px;
-
+        display: block;
+        height: 28px;
     }
     header{
         padding-bottom: 16px;
-        margin: 12px 0 32px 0 ;
+        margin: 0px 0 32px 0 ;
     }
 }
 
@@ -479,10 +479,11 @@ h2{
 .comment{
     display: flex;
     justify-content: space-between;
-    margin: 48px 0 134px 0;
+    margin: 48px 0 0 0;
     overflow-x: auto;
-    height: 370px;
-    align-items: center;
+    height: 316px;
+    padding-bottom: 10px;
+    align-items: flex-end;
     gap: 16px;
 }
 
@@ -497,7 +498,6 @@ h2{
     gap: 16px;
     flex: 0 0 auto;
 }
-
 
 .comment_item p{
     line-height: 24px;
@@ -531,7 +531,6 @@ h2{
     .comment {
         display: flex;
         margin: 24px auto 0px;
-        height: 401px;
         width: 85%;
     }
 }
@@ -540,48 +539,60 @@ h2{
     .comment_item {
         width: 284px;
         height: 285px;
-   
         }
+    .comment{
+        height: 353px;
+    }
 }
 
 
 
-/* 點點清單 */
-/* .dotlist {
+/* 點點清單 */ 
+
+.dot{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+.dotlist {
     position: relative;  
-    width: 100%;
-    margin: 50px;
-  }
+    display: flex;
+    gap: 16px;
+    margin: 12px 0 100px 0;
+}
   
-  .pagination {
-      position: absolute;
-      left: 0;
-      
-      &:nth-child(2) { left: 30px; }
-      &:nth-child(3) { left: 60px; }
-      &:nth-child(4) { left: 90px; }
-  }
+.pagination {
+    position: relative;  
+    flex: 1;
+}
   
-  .circle {
+.circle {
     position: absolute;
     left: 0;
-    width: 20px;
-    height: 20px;  
-    border: 2px solid #777;
-    border-radius: 25px;
-  }
+    width: 10px;
+    height: 10px;  
+    border: 2px solid #DDDDDD;
+    border-radius: 50%;
+    background: #DDDDDD;
+}
   
-  .active {
-    width: 80px;
-    background: #777;
-} */
+.active {
+    width: 16px;
+    background: #FFD153;
+    border: 2px solid #FFD153;
+    flex: 3;
+    border-radius: 50px;
+
+}
 
 
 
 
 
 
-
+/* footer */
 footer{
     display: flex;
     flex-direction:column;
@@ -620,8 +631,8 @@ footer a{
 
 .btn-top{
     display: block;
-    /* top: 674px;
-    left: 1247px; */
+    top: 674px;
+    left: 1247px;
     width: 71px;
     height: 71px;
     background: transparent url('img/top.png')  no-repeat;

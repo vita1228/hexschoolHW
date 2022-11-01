@@ -101,6 +101,16 @@ p{
 
 /* upper */
 
+.background{
+    background-image: url(img_page_fee/Ellipse\ 3.png);
+    background-position: -48% 61%;
+    background-repeat: no-repeat;
+    background-size: 38vw;
+    position: relative;
+    z-index: -99999;
+}
+
+
 
 .upper{
     position: relative;
@@ -171,6 +181,7 @@ header{
  
 .planfeebtn-red{
     background-color: #FF5D50;
+    font-weight: 400;
     width: 128px;
     height: 40px;
     font-size: 16px;
@@ -198,9 +209,14 @@ header{
     header{
         padding-bottom: 24px;
         border-bottom: 2px solid #FFD153;
+        padding: 32px 64px;
+
     }
     .pic{
         width: 100%;
+    }
+    .banner{
+        padding-left: 64px;
     }
 
 
@@ -216,8 +232,7 @@ header{
 
     }
     header{
-        margin-top: 12px;
-        padding: 16px 32px;
+        padding: 16px 16px;
     }
     .logo img{
         display: block;
@@ -321,7 +336,7 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 16px 20px;
-    width: 48vw; 
+    width: 50%; 
 }
 
 .ver_item hr{
